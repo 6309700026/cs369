@@ -15,11 +15,11 @@
         height: 120px;
         border: 1px solid gray;
     }
-    div.ele (odd) { 
+    div.ele { 
         background-color: aqua;
     }
     div.cnf { 
-        color: violet;
+        background-color: violet;
     }
     div:hover{
         font-size: 2rem;
@@ -33,8 +33,10 @@
     <div class="ele">
         Box2 class ele
     </div>
-    <div class="cnf">
+    <div class="cnf" style="width: 60vw;">
         Box3 confilct
+        <div style="width: 50%;"> sub child </div>
+        <div style="width: 50vw;"> sub child2 </div>
     </div>
     <div>
         Box4
