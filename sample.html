@@ -9,7 +9,7 @@
 </head>
 
 <style>
-    div { 
+    /* div { 
         color: blue;
         width: 120px;
         height: 120px;
@@ -23,6 +23,23 @@
     }
     div:hover{
         font-size: 2rem;
+    } */
+    div {
+        background-color: pink;
+        height: 400px;
+    }
+    div.big {
+        display: none;
+    }
+    @media (min-width: 600px) {
+        div {
+            background-color: blue;
+            height: 400px;
+        }
+        div.big {
+            display: block;
+            background-color: violet;
+        }
     }
 </style>
 
