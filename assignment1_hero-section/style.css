@@ -1,0 +1,376 @@
+/* 1 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inder';
+}
+
+header {
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+#logo {
+    line-height: 60px;
+    margin-left: 75px;
+    display: inline-block;
+    font-family: 'Inder';
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+.logopic{
+    width: 2.1%;
+    position: absolute;
+    left: 27px;
+    transform: translate(0, 40%);
+    font-size: 50px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.logoback {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    left: 16px;
+    transform: translate(0, 2%);
+    background: #008C6A;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.signup {
+    float: right;
+    line-height: 60px;
+    margin-top: 5px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.signup a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.signup a:hover {
+    color: #000;
+    font-weight: bold;
+}
+
+.actsignup {
+    background: rgba(2, 178, 135, 0.73);
+    border-radius: 20px;
+    padding: 6px 15px;
+}
+
+.login {
+    float: right;
+    line-height: 60px;
+    margin-top: 5px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.login a {
+    color: #000  ;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login a:hover {
+    color: #008C6A;
+    font-weight: bold;
+}
+
+.actlogin {
+    background: #fff;
+    border-radius: 20px;
+    padding: 6px 15px;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    background: #fff;
+   
+}
+
+.myslide {
+    height: 637px;
+    display: none;
+    overflow: hidden;
+}
+
+.previous,
+.next {
+    position: absolute;
+    top: 582px;
+    left: 47%;
+    transform: translate(0, -50%);
+    font-size: 50px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.1s;
+    user-select: none;
+}
+
+.previous:hover,
+.next:hover {
+    color: #00a7ff;
+}
+
+.next {
+    transform: scaleX(-1);
+    top: 86%;
+    left: 28%;
+}
+
+.box {
+    position: absolute;
+    top: 92%;
+    left: 45.5%;
+    transform: translate(0, -50%);
+    width: 245px;
+    height: 50px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 0;
+    border-radius: 13.5px;
+}
+
+.dotsbox {
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    cursor: pointer;
+}
+
+.dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
+
+
+.active,
+.dot:hover {
+    background: #008C6A;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.8
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.8
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.txt {
+    position: absolute;
+    color: #fff;
+    letter-spacing: 2px;
+    line-height: 35px;
+    top: 40%;
+    left: 15%;
+    -webkit-animation-name: posi;
+    -webkit-animation-duration: 2s;
+    animation-name: posi;
+    animation-duration: 2s;
+    z-index: 1;
+}
+
+@-webkit-keyframes posi {
+    from {
+        left: 25%;
+    }
+
+    to {
+        left: 15%;
+    }
+}
+
+@keyframes posi {
+    from {
+        left: 25%;
+    }
+
+    to {
+        left: 15%;
+    }
+}
+
+
+.slidepic {
+    transform: scale(1.5, 1.5);
+    -webkit-animation-name: zoomin;
+    -webkit-animation-duration: 40s;
+    animation-name: zoomin;
+    animation-duration: 20s;
+}
+
+@-webkit-keyframes zoomin {
+    from {
+        transform: scale(1, 1);
+    }
+
+    to {
+        transform: scale(1.5, 1.5);
+    }
+}
+
+
+@keyframes zoomin {
+    from {
+        transform: scale(1, 1);
+    }
+
+    to {
+        transform: scale(1.5, 1.5);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .myslide {
+        height: 500px;
+    }
+
+    @-webkit-keyframes posi2 {
+        from {
+            top: 35%;
+        }
+
+        to {
+            top: 50%;
+        }
+    }
+
+
+    @keyframes posi2 {
+        from {
+            top: 35%;
+        }
+
+        to {
+            top: 50%;
+        }
+    }
+
+}
+
+@media screen and (max-width: 520px) {
+    .sign {
+        margin-right: 20px;
+    }
+
+    .sign a {
+        font-size: 12px;
+    }
+}
+
+.getstr {
+    position: relative;
+    line-height: 0px;
+    bottom: 257px;
+    left: 1240px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.getstr a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.getstr a:hover {
+    color: #000;
+    font-weight: bold;
+}
+
+.actgetstr {
+    background: #008C6A;
+    border-radius: 20px;
+    padding: 20px 50px;
+    border-radius: 43px;
+}
+
+.input-group {
+    position: relative;
+    width: 665px;
+    height: 95px;
+    left: 800px;
+    bottom: 200px;
+    background: #fff;
+    border-radius: 43px;
+}
+
+.input-group .input-area {
+    position: relative;
+    border: 2px solid #ffffff;
+    width: 500px;
+    height: 57px;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 5px;
+    left: 30px;
+    top: 35px;
+    border-radius: 43px;
+    outline: none;
+}
+
+.input-group .input-area:valid+.label {
+    top: 10px;
+    padding: 0 20px;
+    font-size: 300px;
+}
+
+.input-group .input-area:focus {
+    border: 0px none;
+}
+
+.input-group .label {
+    color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    font-size: 30px;
+    top: 25px;
+    left: 50px;
+}
+
+.input-group .input-area:focus+.label {
+    top: 10px;
+    padding: 0 2px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.3);
+}

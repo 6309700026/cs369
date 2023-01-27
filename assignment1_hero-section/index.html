@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lamg="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Inder" rel="stylesheet">
+    <title>HEARTMINDFUL</title>
+</head>
+
+    <body>
+        <header>
+            <div id="logo"><div class="logoback"></div><img class="logopic" src="./img/logo.png">HEARTMINDFUL</div>
+            <span class="login"><a class="actlogin" href="#">Login</a></span>
+            <span class="signup"><a class="actsignup" href="#">Sign Up</a></span>
+        </header>
+        
+        <div class="slider">
+            <div class="myslide fade">
+                <img class="slidepic" src="./img/pic1.jpg" style="width: 100%; transform: translate(-50%, -80%);">
+            </div>
+        
+            <div class="myslide fade">
+                <img class="slidepic" src="./img/pic2.jpg" style="width: 100%; transform: translate(100%, 0);">
+            </div>
+        
+            <div class="myslide fade">
+                <img class="slidepic" src="./img/pic3.jpg" style="width: 100%; transform: translate(100%, 0);">
+            </div>
+        
+            <div class="myslide fade">
+                <img class="slidepic" src="./img/pic4.png" style="width: 100%; transform: translate(100%, 0);">
+            </div>
+        
+            <div class="box"></div>
+            <a class="previous" onclick="plusSlides(-1)"><img src="./img/arr1.png" style="width: 5%;"></a>
+            <a class="next" onclick="plusSlides(1)"><img src="./img/arr1.png" style="width: 5%;"></a>
+        
+            <div class="dotsbox" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+
+        <script src="action.js"></script>
+
+        <div class="input-group">
+            <input type="text" class="input-area" required id="inputField" />
+            <label for="inputField" class="label">Enter Email Address</label>
+        </div>
+
+        <button class="getstr"><a class="actgetstr" href="#">Get Started</a></button>
+
+    </body>
+
+</html>
