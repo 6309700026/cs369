@@ -51,8 +51,10 @@ header {
     float: right;
     line-height: 60px;
     margin-top: 5px;
-    margin-right: 20px;
+    margin-right: 10px;
     text-align: center;
+    background: none;
+    border: none;
 }
 
 .signup a {
@@ -78,6 +80,8 @@ header {
     margin-top: 5px;
     margin-right: 20px;
     text-align: center;
+    background: none;
+    border:  none;
 }
 
 .login a {
