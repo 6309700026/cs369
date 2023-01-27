@@ -127,11 +127,6 @@ header {
     user-select: none;
 }
 
-.previous:hover,
-.next:hover {
-    color: #00a7ff;
-}
-
 .next {
     transform: scaleX(-1);
     top: 86%;

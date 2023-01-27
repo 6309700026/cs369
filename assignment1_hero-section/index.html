@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lamg="en">
 
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css?family=Inder" rel="stylesheet">
-    <title>HEARTMINDFUL</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css?family=Inder" rel="stylesheet">
+        <title>HEARTMINDFUL</title>
+    </head>
 
     <body>
         <header>
-            <div id="logo"><div class="logoback"></div><img class="logopic" src="./img/logo.png">HEARTMINDFUL</div>
-            <button class="login"><a class="actlogin" href="#">Login</a></button>
-            <button class="signup"><a class="actsignup" href="#">Sign Up</a></button>
+            <div id="logo">
+                <div class="logoback"></div>
+                <img class="logopic" src="./img/logo.png">HEARTMINDFUL
+            </div>
+            <button class="login">
+                <a class="actlogin" href="#">Login</a>
+            </button>
+            <button class="signup">
+                <a class="actsignup" href="#">Sign Up</a>
+            </button>
         </header>
         
         <div class="slider">
@@ -38,8 +44,10 @@
             </div>
         
             <div class="box"></div>
-            <a class="previous" onclick="plusSlides(-1)"><img src="./img/arr1.png" style="width: 5%;"></a>
-            <a class="next" onclick="plusSlides(1)"><img src="./img/arr1.png" style="width: 5%;"></a>
+            <a class="previous" onclick="plusSlides(-1)">
+                <img src="./img/arr1.png" style="width: 5%;"></a>
+            <a class="next" onclick="plusSlides(1)">
+                <img src="./img/arr1.png" style="width: 5%;"></a>
         
             <div class="dotsbox" style="text-align:center">
                 <span class="dot" onclick="currentSlide(1)"></span>
@@ -49,14 +57,13 @@
             </div>
         </div>
 
-        <script src="action.js"></script>
-
         <div class="input-group">
-            <input type="text" class="input-area" required id="inputField" />
+            <input type="text" class="input-area" required id="inputField"/>
             <label for="inputField" class="label">Enter Email Address</label>
         </div>
-
         <button class="getstr"><a class="actgetstr" href="#">Get Started</a></button>
+
+        <script src="action.js"></script>
 
     </body>
 
