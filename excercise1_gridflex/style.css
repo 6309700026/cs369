@@ -1,0 +1,56 @@
+.container {
+    max-height: 60vh;
+    max-width: 70vw;
+    min-width: 400px;
+    box-sizing: border-box;
+    margin: auto;
+    border: 1px solid black;
+    overflow: auto;
+    padding: 5px;
+    display: flex;
+    align-items: stretch;
+    gap: 0.25rem;
+    overflow: auto;
+
+}
+
+.big-box, 
+.small-box {
+    border: 1px dotted gray;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.small-box img {
+    object-fit: scale-down;
+}
+
+.big-box {
+    flex: 2;
+}
+
+.big-box img {
+    object-fit: cover;
+    height: 100%;
+    overflow: hidden;
+    align-self: stretch;
+}
+
+.small-box-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.small-box-wrapper .item {
+    flex: 1;
+    min-height: 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
